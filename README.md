@@ -55,7 +55,7 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0g
 ```
 ### how to cancel an order:
 ```text
-GET /orders/2/cancel HTTP/1.1
+PUT /orders/2/cancel HTTP/1.1
 Host: localhost:8081
 Cache-Control: no-cache
 ```
