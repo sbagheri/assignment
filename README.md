@@ -13,7 +13,7 @@ java -jar target/order.jar
 ```
 ## Barista Service:
 ### How to run?
-in th order directory please run this command.
+in th barista directory please run this command.
 ```shell
 mvn clean insatll -DskipTests
 
