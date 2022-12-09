@@ -27,7 +27,7 @@ public class GlobalExceptionAdvice extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler(BadRequestException.class)
-    public ResponseEntity<BaseResponse> handleBadRequestException(ResourceNotFoundException exception) {
+    public ResponseEntity<BaseResponse> handleBadRequestException(BadRequestException exception) {
         log.error(exception.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new BaseResponse(exception.getMessage(), "400"));
     }
